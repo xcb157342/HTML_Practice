@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>函数</title>
+</head>
+<body>
+    <script>
+        function hello(){
+            console.log('Hello World')
+        }
+        hello()
+        function hello_return(){
+            return "Hello with return"
+        }
+        s = hello_return()
+        console.log(s)
+        function hello_param (name){
+            console.log('Hello,'+name)
+        }
+        hello_param('大闸蟹')
+        let globalx = '全局变量'
+        function local_var(){
+            let local_var = '局部变量'
+
+        }
+        
+    </script>
+    
+
+</body>
+</html>

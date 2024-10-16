@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS选择器</title>
+    <style>
+    /* 元素选择器 */
+    h2{
+        color:red
+    
+    }
+    /* 类选择器 */
+    .hg{
+        background-color: yellow;
+    }
+    /* ID选择器 */
+    #ex0{
+        font-size: 35px;
+    }
+    /* 通用选择器 */
+    *{
+        font-family: 'KaiTi';
+        font-weight: bolder;
+    }
+    /* 子元素选择器 */
+    .father > .son{
+        color: yellowgreen;
+    }
+    /* 后代选择器 */
+    .father p {
+        color:darkmagenta ;
+    }
+    /* 相邻元素选择器 */
+    h3 + p{
+        background-color: red;
+    }
+    /* 伪类选择器 */
+    #ele:hover{
+        background-color: purple;
+    }
+    /* 选中第一个子元素:first-child
+                       :nth-child()
+                       :active         
+    */
+    /* 伪元素选择器  ::after
+    ::before
+    */
+    </style>
+    
+</head>
+<body>
+    <h1>不同类型的选择器</h1>
+    <ul style="font-size: 15px;">
+        <li>元素选择器</li>
+        <li>类选择器</li>
+        <li>ID选择器</li>
+        <li>通用选择器</li>
+        <li>子元素选择器</li>
+        <li>后代（包含）选择器</li>
+        <li>并集（兄弟）选择器</li>
+        <li>伪类选择器</li>
+    </ul>
+    <h2>元素选择器</h2>
+    <h3>1类选择器</h3>
+    <h3 class="hg">2类选择器</h3>
+    <h4 id="ex0">ID选择器</h4>
+    
+    <div class="father">
+        <p class="son">子元素选择器</p>
+        <div>
+            <p class="grason">后代（包含）选择器</p>
+        </div>
+    </div>
+
+    <p>一个普通 p 标签</p>
+    <h3>兄弟选择器</h3>
+    <p>另一个p标签</p>
+
+    <h3 id="ele">伪类选择器:鼠标悬停</h3>
+
+</body>
+</html>

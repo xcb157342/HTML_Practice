@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        th,
+        td {
+            border-width: 2px;
+            border-style: solid;
+            text-align: center;
+            font-family: 'songti';
+            font-weight: 700;
+            padding: 10px;
+        }
+
+        button {
+            margin-left: 1cap;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">表格的增删改查</h1>
+    <button onclick="addrow()">新增数据</button>
+    <div class="search" style="position:absolute; right: 15px ;top: 85px;">
+        <button onclick="search()">搜索</button>
+        <input type="text" name="" id="search">
+    </div>
+
+    <table id="table">
+
+        <tr>
+            <th style="width:30% ">姓名</th>
+            <th style="width:40% ">联系方式</th>
+            <th> 操作</th>
+        </tr>
+        <tr>
+            <th>小明</th>
+            <th>1234567890</th>
+            <td>
+                <button onclick="edit(this)">编辑</button><button onclick="delrow(this)">删除</button>
+            </td>
+        </tr>
+    </table>
+    <script src="JS/practice.js"></script>
+</body>
+
+</html>

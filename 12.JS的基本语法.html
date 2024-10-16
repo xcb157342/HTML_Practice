@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS的基本语法</title>
+</head>
+<body>
+    <script>
+        var x;      //具有函数作用域,少用
+        let y = 5;  //具有块级作用域,多使用
+        const PI = 3.14;//常量,多使用
+        console.log(x,y,PI)
+        let name = 'ddh';
+        console.log(name);
+        let empty = null;
+        console.log(empty)
+        let age = 18
+        if(age > 18){
+            console.log('你已经成年')
+        }
+        else{
+            console.log('你未成年')
+        }
+        for(let i=1;i<11;i++)
+        {
+           
+            if(i == 2){
+                continue
+            }
+            else if(i == 4){
+                break
+            }
+            console.log(i)
+        }
+        
+    </script>
+</body>
+</html>
